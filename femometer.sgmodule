@@ -1,0 +1,8 @@
+#!name=Femometer月经助手
+#!desc=版本 5.9.1
+
+[Script]
+Femometer月经助手 = type=http-response,pattern=https://api.bongmi.com/v1/subscription/*/status,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/femometer.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.bongmi.com

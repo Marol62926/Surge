@@ -1,0 +1,9 @@
+#!name=Mcafee Vpn
+#!desc=版本 2.13.0
+
+[Script]
+Mcafee Vpn = type=http-response,pattern=https://msc.mcafee.com/api/v1/app/provision/info,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mcafeeVpn.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% msc.mcafee.com
+

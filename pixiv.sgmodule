@@ -1,0 +1,9 @@
+#!name=Pixiv
+#!desc=Pixiv
+
+[Script]
+Pixiv = type=http-response,pattern=^https://oauth.secure.pixiv.net/auth/token,script-path=https://raw.githubusercontent.com/Charstr/script/main/script/pixiv.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% oauth.secure.pixiv.net
+

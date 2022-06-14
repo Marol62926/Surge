@@ -1,0 +1,9 @@
+#!name=ProKnockOut
+#!desc=版本 7.09
+
+[Script]
+ProKnockOut = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/proKnockOut.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
+

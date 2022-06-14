@@ -1,0 +1,9 @@
+#!name=ShadowLink VPN
+#!desc=版本 4.3.4
+
+[Script]
+ShadowLink VPN = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
+

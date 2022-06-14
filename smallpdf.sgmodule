@@ -1,0 +1,9 @@
+#!name=Smallpdf
+#!desc=版本 1.46.1
+
+[Script]
+Smallpdf = type=http-response,pattern=https://pro.smallpdf.com/pro/account,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/smallpdf.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% pro.smallpdf.com
+

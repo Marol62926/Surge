@@ -1,0 +1,10 @@
+#!name=Funimation
+#!desc=Funimation 字幕显示
+#!引用Neurogram-R大佬的字幕脚本，应用于Funimation
+
+[Script]
+# > Funimation
+Funimation = type=http-response,pattern=https:\/\/.+funimation.com\/.+\.vtt,script-path=https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/Dualsub.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% *.funimation.com

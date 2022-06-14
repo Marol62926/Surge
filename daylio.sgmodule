@@ -1,0 +1,8 @@
+#!name=Daylio日记
+#!desc=版本 2.7.1
+
+[Script]
+Daylio日记 = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/daylio.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com

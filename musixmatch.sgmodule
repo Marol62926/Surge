@@ -1,0 +1,9 @@
+#!name=Musixmatch
+#!desc=版本 7.9.1
+
+[Script]
+Musixmatch = type=http-response,pattern=https://apic.musixmatch.com/ws/1.1/config.get,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/musixmatch.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% apic.musixmatch.com
+

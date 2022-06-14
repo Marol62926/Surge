@@ -1,0 +1,8 @@
+#!name=Picsart
+#!desc=版本 19.7.3
+
+[Script]
+Picsart = type=http-response,pattern=https://api.meiease.(cn|com)/shop/subscription/apple/purchases,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/picsart.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.meiease.*

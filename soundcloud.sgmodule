@@ -1,0 +1,8 @@
+#!name=Soundcloud
+#!desc=版本 5.174.0
+
+[Script]
+Soundcloud = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api-mobile.soundcloud.com

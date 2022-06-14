@@ -1,0 +1,9 @@
+#!name=Photoroom
+#!desc=版本 4.6.2
+
+[Script]
+Photoroom = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/phototroom.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
+

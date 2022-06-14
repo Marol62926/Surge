@@ -1,0 +1,8 @@
+#!name=Daily Yoga
+#!desc=版本 8.12.00
+
+[Script]
+Daily Yoga = type=http-response,pattern=https://pre.dailyyoga.com/h2oapi/user/getUserDetail,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/dailyYoga.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% pre.dailyyoga.com

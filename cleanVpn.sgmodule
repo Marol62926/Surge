@@ -1,0 +1,9 @@
+#!name=Clean Vpn
+#!desc= 版本 30.0.0
+#! 需登录，配合quanx等工具双开vpn，选好节点好通过设置手动打开vpn，app内换不了，最后关闭quanx，正常使用，大多原生节点解锁流媒体
+
+[Script]
+Clean Vpn = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/cleanVpn.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com

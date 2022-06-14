@@ -1,0 +1,8 @@
+#!name=Mcafee
+#!desc=版本 6.7.0
+
+[Script]
+Mcafee = type=http-response,pattern=https://securitymgmt.unifiedapis.mcafee.com/features/v1/Subscription/*,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mcafee.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% securitymgmt.unifiedapis.mcafee.com

@@ -1,0 +1,8 @@
+#!name=Scanner Pro
+#!desc=版本 8.7.4
+
+[Script]
+Scanner Pro = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/scannerPro.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com

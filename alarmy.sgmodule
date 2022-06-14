@@ -1,0 +1,8 @@
+#!name=Alarmy使命闹钟
+#!desc= 版本 6.60.0
+
+[Script]
+Alarmy = type=http-response,pattern=https://ars.alar.my/api/v2/user/sync,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/alarmy.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% ars.alar.my

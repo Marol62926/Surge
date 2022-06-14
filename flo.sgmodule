@@ -1,0 +1,8 @@
+#!name=Flo女性日记
+#!desc=版本 8.11
+
+[Script]
+Flo女性日记 = type=http-response,pattern=https://api.owhealth.(com|cn)/subscriptions/v1/apple,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/flo.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.owhealth.*

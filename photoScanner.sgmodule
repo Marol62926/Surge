@@ -1,0 +1,9 @@
+#!name=Photo Scanner
+#!desc=版本 6.5
+#! https://apps.apple.com/us/app/id1445657499
+
+[Script]
+Photo Scanner = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/photoScanner.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
