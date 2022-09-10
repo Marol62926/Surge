@@ -1,0 +1,9 @@
+#!name=Now 冥想
+#!desc=版本 4.3.7
+
+[Script]
+Now 冥想 = type=http-response,pattern=https://nowapi.navoinfo.cn/h2/user/*,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/nowPonder.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% nowapi.navoinfo.cn
+

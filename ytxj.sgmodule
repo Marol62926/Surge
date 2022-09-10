@@ -1,0 +1,9 @@
+#!name=一甜相机
+#!desc=版本 2.8.2
+
+[Script]
+一甜相机 = type=http-response,pattern=https:\/\/m2u-api\.getkwai\.com\/api-server\/api\/v\d\/vip\/vipUserInfo,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/ytxj.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% m2u-api.getkwai.com
+

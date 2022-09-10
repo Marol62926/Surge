@@ -1,0 +1,9 @@
+#!name=Noto
+#!desc=Noto
+
+[Script]
+Noto = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/noto.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
+

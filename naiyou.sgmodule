@@ -1,0 +1,8 @@
+#!name=奶由壁纸
+#!desc=版本 1.8.2
+
+[Script]
+奶由壁纸 = type=http-response,pattern=https://nz-api.duitang.com/account/me,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/naiyou.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% nz-api.duitang.com

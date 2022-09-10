@@ -1,0 +1,12 @@
+#!name=Adobe
+#!desc=Adobe全家桶
+#! PS Express无法使用，其余未标出软件为Cloud Storage类型订阅
+
+[Script]
+# > Adobe Photoshop, Adobe Illustrator, Adobe Lightroom, Premiere Rush, Adobe Express, Spark Page, Spark Video, Adobe Fresco
+Adobe = type=http-response,pattern=https://lcs-mobile-cops.adobe.io/mobile_profile/nul/v2,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/adobe.js,requires-body=1,max-size=0
+# > Adobe Scan, Adobe Acrobat
+Adobe = type=http-response,pattern=https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/adobeScanPdf.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% lcs-mobile-cops.adobe.io,createpdf.acrobat.com

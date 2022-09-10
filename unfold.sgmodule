@@ -1,0 +1,10 @@
+#!name=Unfold
+#!desc=版本 8.4.1
+
+[Script]
+Unfold = type=http-response,pattern=https://api.unfold.app/v1/ios/receipts,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/unfold.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.unfold.app
+
+

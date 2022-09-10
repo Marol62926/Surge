@@ -1,0 +1,9 @@
+#!name=手机传真
+#!desc=版本 1.8.6
+
+[Script]
+手机传真 = type=http-response,pattern=https://faxapp.biz/api/account/subscription,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mobileFax.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% faxapp.biz
+

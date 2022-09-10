@@ -1,0 +1,8 @@
+#!name=免耽漫画
+#!desc=版本 2.6.1
+
+[Script]
+免耽漫画 = type=http-response,pattern=https://app.lalaldc.cn/api/lifan-customer/customer/info,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mdmanga.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% app.lalaldc.cn

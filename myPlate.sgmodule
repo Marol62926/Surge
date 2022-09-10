@@ -1,0 +1,9 @@
+#!name=MyPlate
+#!desc=版本 5.39.0
+
+[Script]
+MyPlate = type=http-response,pattern=https://www.livestrong.com/service/user/profile/*,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/myPlate.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% www.livestrong.com
+

@@ -1,0 +1,8 @@
+#!name=Bazaart
+#!desc= 版本 8.46.1
+
+[Script]
+Bazaart = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/bazaart.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com

@@ -1,0 +1,9 @@
+#!name=时光手账
+#!desc=版本 5.7.6
+
+[Script]
+时光手账 = type=http-response,pattern=https://api.shouzhang.com/memcenterlk/member,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/timebook.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% api.shouzhang.com
+

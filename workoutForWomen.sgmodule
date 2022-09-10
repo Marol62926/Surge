@@ -1,0 +1,9 @@
+#!name=Workout For Women
+#!desc=版本 5.11.0
+
+[Script]
+Workout For Women = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/workoutForWomen.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
+

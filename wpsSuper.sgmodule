@@ -1,0 +1,10 @@
+#!name=Wps
+#!desc= by nobyda
+
+
+[Script]
+# > Wps
+Wps = type=http-response,pattern=^https://account.wps.*/api/users/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% account.wps.cn

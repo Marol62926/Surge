@@ -1,0 +1,9 @@
+#!name=WidgetHub
+#!desc=版本 1.2.0
+
+[Script]
+WidgetHub = type=http-response,pattern=^https:\/\/wejet\.app\/API\/userInfo,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/widgethub.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% wejet.app
+

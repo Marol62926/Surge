@@ -1,0 +1,8 @@
+#!name=Curiositystream
+#!desc= Curiositystream 字幕
+
+[Script]
+Curiositystream = type=http-response,pattern=https:\/\/.+curiositystream.com\/.+\.vtt,script-path=https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/Dualsub.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% *.curiositystream.com
