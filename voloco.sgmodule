@@ -1,0 +1,8 @@
+#!name=Voloco
+#!desc=版本 7.5.7
+
+[Script]
+Voloco = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/voloco.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
